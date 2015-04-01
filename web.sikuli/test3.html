@@ -1,0 +1,169 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>test3.sikuli\test3.sikuli</h2> <a href="test3.sikuli\test3.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+Settings.OcrTextSearch = True
+Settings.OcrTextRead = True
+<span class="cmt">#開啟Chrome
+</span>App.open (<span class="str">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"</span>)
+<span class="cmt">#等3秒
+</span><span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="cmt">#貼上網址
+</span>paste(<span class="str">"http://mall.beta.hiiir-inc.com/salecenter/index?saleNo=S00030785"</span>)
+<span class="cmt">#按ENTER
+</span><span class="skw">type</span>(Key.ENTER)
+<span class="cmt">#等3秒
+</span><span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="cmt">#選規格
+</span><span class="skw">click</span>(<img src="1426234158660.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="1426234273714.png" />)
+<span class="skw">click</span>(<img src="1426235356381.png" />)
+<span class="cmt">#畫面往下四格
+</span><span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>,<span class="dig">4</span>):
+ <span class="skw">type</span>(Key.DOWN)
+<span class="cmt">#選贈品
+</span><span class="skw">click</span>(<img src="1426234308351.png" />)
+<span class="skw">click</span>(<img src="1426234330470.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="1426234369166.png" />)
+<span class="skw">click</span>(<img src="1426234389744.png" />)
+<span class="skw">click</span>(<img src="1426234402276.png" />)
+<span class="cmt">#畫面往下三格
+</span><span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>,<span class="dig">3</span>):
+ <span class="skw">type</span>(Key.DOWN)
+<span class="cmt">#放入購物車
+</span><span class="skw">click</span>(<img src="1426235917780.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="1427170759702.png" />)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">click</span>(<img src="1427170822702.png" />)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(<img src="1427170892201.png" />)
+<span class="skw">click</span>(Pattern(<img src="1427170920978.png" />).targetOffset(<span class="dig">23</span>,<span class="dig">0</span>))
+<span class="skw">click</span>(<img src="1427170982299.png" />)
+<span class="cmt">#畫面往下6格
+</span><span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>,<span class="dig">6</span>):
+ <span class="skw">type</span>(Key.DOWN)
+<span class="skw">click</span>(<img src="1427171026833.png" />)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">click</span>(Pattern(<img src="1427171108052.png" />).targetOffset(-<span class="dig">41</span>,-<span class="dig">2</span>))
+<span class="cmt">#畫面往下6格
+</span><span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>,<span class="dig">6</span>):
+ <span class="skw">type</span>(Key.DOWN)
+paste(<img src="1427171176282.png" />, <span class="str">"0912345678"</span>)
+<span class="skw">click</span>(<img src="1427171211676.png" />)
+<span class="cmt">#畫面往下10格
+</span><span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>,<span class="dig">10</span>):
+ <span class="skw">type</span>(Key.DOWN)
+<span class="skw">click</span>(<img src="1427171597278.png" />)
+
+<span class="skw">wait</span>(<span class="dig">60</span>)
+
+<span class="cmt">#抓取本機螢幕要選擇範圍
+</span>a = <span class="skw">find</span> (Screen(<span class="dig">0</span>).<span class="skw">capture</span>(Region(<span class="dig">294</span>,<span class="dig">471</span>,<span class="dig">240</span>,<span class="dig">13</span>)))
+<span class="cmt">#begin抓取上一行範圍的X,Y值當起始點，END抓取中心點
+</span><span class="skw">dragDrop</span>(Location(<span class="dig">294</span>, <span class="dig">471</span>),a)
+<span class="cmt">#ctrl+C複製
+</span><span class="skw">type</span>(<span class="str">"c"</span>, KeyModifier.CTRL)
+<span class="cmt">#等一秒才不會太快有時會失敗
+</span><span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="cmt">#取得clipboard的值
+</span>b = Env.getClipboard().strip()
+
+
+<span class="cmt">#畫面往下20格
+</span><span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>,<span class="dig">20</span>):
+ <span class="skw">type</span>(Key.DOWN)
+
+<span class="skw">click</span>(<img src="1427171472382.png" />)
+<span class="skw">wait</span>(<span class="dig">10</span>)
+
+c = <span class="skw">find</span> (Screen(<span class="dig">0</span>).<span class="skw">capture</span>(Region(<span class="dig">98</span>,<span class="dig">512</span>,<span class="dig">222</span>,<span class="dig">13</span>)))
+<span class="skw">dragDrop</span>(Location(<span class="dig">98</span>, <span class="dig">512</span>),c)
+<span class="skw">type</span>(<span class="str">"c"</span>, KeyModifier.CTRL)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+d = Env.getClipboard().strip()
+
+<span class="skw">click</span>(<img src="1427275343201.png" />)
+
+
+<span class="kw">print</span> b
+<span class="kw">print</span> d
+
+<span class="kw">if</span> b==d:
+    <span class="kw">print</span> <span class="str">"PASS"</span>
+<span class="kw">else</span>:
+    <span class="kw">print</span> <span class="str">"Fail"</span>
+    <span class="skw">wait</span>()
+</pre>
+</body>
+</html>
